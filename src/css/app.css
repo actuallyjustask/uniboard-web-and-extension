@@ -1,0 +1,174 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif !important;
+  font-size: 100%;
+  height: 100%;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+.mainComponent {
+  height: calc(100% - 64px);
+  margin: 0;
+  overflow: hidden;
+}
+
+.sidebarBackground {
+  background: #80808099;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 600;
+}
+
+.brow {
+  width: 40px;
+  height: 4px;
+}
+
+.center-on-page {
+  text-align: center;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+.weekcard:hover {
+  transform: scale(1.02, 1.02);
+  transition: all .2s ease-in-out;
+}
+
+.custom-shadow {
+  box-shadow: 0 0px 6px 0px rgba(0,0,0,0.2);
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-center {
+  -webkit-animation: rotate-center 1s ease-in-out infinite both;
+  animation: rotate-center 1s ease-in-out infinite both;
+}
+
+
+/* Dark mode */
+
+/*
+BG			  #000000
+BG Cards	#272c2f
+BG CarsH	#2f3437
+*/
+.dark{
+  
+  color : #e3e3e3;
+  background-color: #000000!important;
+  
+}
+.dark .bg-gray-100, .dark .bg-purple-100 {
+  background-color: #000000!important;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.bg-gray-100 {
+  transition: all .2s ease-in-out;
+}
+
+.dark .sidebarBackground {
+  background: #80808099;
+ }
+
+.dark .bg-white{
+  background-color: #2f3437!important;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+ }
+
+.dark .custom-shadow {
+  box-shadow: 0 0px 6px 0px rgba(0,0,0,0.8);
+}
+.dark .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.5), 0 4px 6px -2px rgba(0,0,0,.09);
+}
+
+.dark .text-gray-800{
+
+}
+
+.dark .text-white, .dark .text-purple-600{
+  color: #6c757d;
+}
+.dark .fa-sync-alt.text-white{
+  color:#e2e8f0;
+}
+
+
+*, ::after, ::before {
+  border-color: #e2e8f0;
+}
+
+.dark button{
+  background-color : #2f3437!important;
+}
+
+.bg-purple-700:hover{
+  background-color : #000000!important;
+}
+
+.dark .hover\:bg-purple-400:hover{
+  background-color : #000000!important;
+}
+
+
+.dark .border-purple-400{
+  border-color : #6c757d;
+}
+
+.dark .hover\:border-purple-500:hover{
+  border-color : #6c757d;
+}
+
+.dark .text-gray-700, .dark .text-gray-800{
+  color : #e2e8f0;
+}
+
+.dark .bg-blue-500{
+  background-color: #4299e1!important;
+  color: #fff;
+  box-shadow: 0 0px 6px 0px rgba(0,0,0,0.8);
+}
+
+.dark .hover\:bg-gray-300:hover{
+  background-color : #000000!important;
+}
